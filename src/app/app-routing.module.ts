@@ -6,6 +6,8 @@ import { AuthGuard } from './auth.guard';
 import { LoginFormularioComponent } from './public/login-formulario/login-formulario.component';
 import { NgModule} from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TablaPeriodosComponent } from './periodos/tablaPeriodos/tabla-periodos/tabla-periodos.component';
+import { AgregarPeriodosComponent } from './periodos/agregarPeriodos/agregar-periodos/agregar-periodos.component';
 
 
 const routes: Routes = [
@@ -20,6 +22,9 @@ const routes: Routes = [
   {path:'agregarMaterias', component:AgregarMateriasComponent},
   {path:'modificarMaterias/:id', component:AgregarMateriasComponent},
 
+  {path:'mostrarPeriodos', component:TablaPeriodosComponent},
+  {path:'agregarPeriodos', component:AgregarPeriodosComponent},
+  {path:'modificarPeriodos/:id', component:AgregarPeriodosComponent},
 
 ];
 
