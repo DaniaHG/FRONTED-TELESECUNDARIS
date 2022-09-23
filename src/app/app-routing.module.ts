@@ -8,6 +8,8 @@ import { NgModule} from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TablaPeriodosComponent } from './periodos/tablaPeriodos/tabla-periodos/tabla-periodos.component';
 import { AgregarPeriodosComponent } from './periodos/agregarPeriodos/agregar-periodos/agregar-periodos.component';
+import { LisalumnoComponent } from './alumnos/lisalumno/lisalumno.component';
+import { AlumnosComponent } from './alumnos/alumnos.component';
 
 
 const routes: Routes = [
@@ -25,6 +27,12 @@ const routes: Routes = [
   {path:'mostrarPeriodos', component:TablaPeriodosComponent},
   {path:'agregarPeriodos', component:AgregarPeriodosComponent},
   {path:'modificarPeriodos/:id', component:AgregarPeriodosComponent},
+
+  //alumnos
+  
+  {path:'AgregarAlumnos', component:LisalumnoComponent},
+  {path:'mostrarAlumnos', component:AlumnosComponent},
+  {path:'modificarAlumnos/:id', component:LisalumnoComponent},
 
 ];
 
