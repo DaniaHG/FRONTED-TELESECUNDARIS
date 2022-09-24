@@ -32,6 +32,8 @@ import { AgregarMateriasComponent } from './materias/agregarMaterias/agregar-mat
 import { TablaMateriasComponent } from './materias/tablaMaterias/tabla-materias/tabla-materias.component';
 import { AgregarPeriodosComponent } from './periodos/agregarPeriodos/agregar-periodos/agregar-periodos.component';
 import { TablaPeriodosComponent } from './periodos/tablaPeriodos/tabla-periodos/tabla-periodos.component';
+import { AlumnosComponent } from './alumnos/alumnos.component';
+import { LisalumnoComponent } from './alumnos/lisalumno/lisalumno.component';
 
 
 
@@ -45,7 +47,9 @@ import { TablaPeriodosComponent } from './periodos/tablaPeriodos/tabla-periodos/
     AgregarMateriasComponent,
     TablaMateriasComponent,
     AgregarPeriodosComponent,
-    TablaPeriodosComponent
+    TablaPeriodosComponent,
+    AlumnosComponent,
+    LisalumnoComponent
   ],
   imports: [
     BrowserModule,
