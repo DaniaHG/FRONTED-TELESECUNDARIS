@@ -13,16 +13,12 @@ export class AgregarMateriasComponent implements OnInit {
 
   materias: Materias= {
     id: '',
-    nombre: '',
-    docentes_id: '',
-    docente: '',
+    nombre: ''
 
     }
     addressForm = this.fb.group({
       id: [''],
-      nombre: ['', Validators.required],
-      docentes_id: ['', Validators.required],
-      docente: ['']
+      nombre: ['', Validators.required]
     });
     editing: boolean = false;
 
@@ -60,9 +56,7 @@ export class AgregarMateriasComponent implements OnInit {
       }else{
         const materia: Materias = {
           id: this.addressForm.value.id,
-          nombre: this.addressForm.value.nombre,
-          docentes_id: this.addressForm.value.docentes_id,
-          docente: this.addressForm.value.docente
+          nombre: this.addressForm.value.nombre
         }
         this.materiasService.postMaterias(materia);
         this.router.navigate(['/mostrarMaterias']);

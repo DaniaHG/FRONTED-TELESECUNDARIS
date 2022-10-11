@@ -1,3 +1,5 @@
+import { AgregarMateriaDocenteComponent } from './materia_docente/agregarMateriaDocente/agregar-materia-docente/agregar-materia-docente.component';
+import { TablaMateriaDocenteComponent } from './materia_docente/tablaMateriaDocente/tabla-materia-docente/tabla-materia-docente.component';
 import { AgregarMateriasComponent } from './materias/agregarMaterias/agregar-materias/agregar-materias.component';
 import { TablaMateriasComponent } from './materias/tablaMaterias/tabla-materias/tabla-materias.component';
 import { AgregarDocentesComponent } from './docentes/agregarDocentes/agregar-docentes/agregar-docentes.component';
@@ -16,24 +18,30 @@ const routes: Routes = [
   {path: '', component:  TablaDocentesComponent},
   //{path: 'login', component:  LoginFormularioComponent},//
 
+   //docentes
   {path:'mostrarDocentes', component:TablaDocentesComponent},
   {path:'agregarDocentes', component:AgregarDocentesComponent},
   {path:'modificarDocentes/:id', component:AgregarDocentesComponent},
 
+   //materias
   {path:'mostrarMaterias', component:TablaMateriasComponent},
   {path:'agregarMaterias', component:AgregarMateriasComponent},
   {path:'modificarMaterias/:id', component:AgregarMateriasComponent},
 
+   //periodos
   {path:'mostrarPeriodos', component:TablaPeriodosComponent},
   {path:'agregarPeriodos', component:AgregarPeriodosComponent},
   {path:'modificarPeriodos/:id', component:AgregarPeriodosComponent},
 
   //alumnos
-  
   {path:'AgregarAlumnos', component:LisalumnoComponent},
   {path:'mostrarAlumnos', component:AlumnosComponent},
   {path:'modificarAlumnos/:id', component:LisalumnoComponent},
 
+   //materias docentes
+  {path:'mostrarMateriasDocente', component:TablaMateriaDocenteComponent},
+  {path:'agregarMateriasDocente', component:AgregarMateriaDocenteComponent},
+  {path:'modificarMateriasDocente/:id', component:AgregarMateriaDocenteComponent},
 ];
 
 @NgModule({

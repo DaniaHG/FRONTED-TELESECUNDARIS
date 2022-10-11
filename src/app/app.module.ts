@@ -34,6 +34,8 @@ import { AgregarPeriodosComponent } from './periodos/agregarPeriodos/agregar-per
 import { TablaPeriodosComponent } from './periodos/tablaPeriodos/tabla-periodos/tabla-periodos.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
 import { LisalumnoComponent } from './alumnos/lisalumno/lisalumno.component';
+import { AgregarMateriaDocenteComponent } from './materia_docente/agregarMateriaDocente/agregar-materia-docente/agregar-materia-docente.component';
+import { TablaMateriaDocenteComponent } from './materia_docente/tablaMateriaDocente/tabla-materia-docente/tabla-materia-docente.component';
 
 
 
@@ -49,7 +51,9 @@ import { LisalumnoComponent } from './alumnos/lisalumno/lisalumno.component';
     AgregarPeriodosComponent,
     TablaPeriodosComponent,
     AlumnosComponent,
-    LisalumnoComponent
+    LisalumnoComponent,
+    AgregarMateriaDocenteComponent,
+    TablaMateriaDocenteComponent
   ],
   imports: [
     BrowserModule,

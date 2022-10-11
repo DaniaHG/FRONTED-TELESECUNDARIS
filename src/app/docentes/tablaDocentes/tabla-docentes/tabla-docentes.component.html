@@ -29,14 +29,14 @@
           </thead>
           <tbody>
             <tr *ngFor="let docentes of ListarDocentes" class=" text-center">
-              <th>{{docentes.id}}</th>
+              <td>{{docentes.id}}</td>
               <td>{{docentes.dpi}}</td>
               <td>{{docentes.nombre}}</td>
-              <th>{{docentes.fecha_nacimiento}}</th>
+              <td>{{docentes.fecha_nacimiento}}</td>
               <td>{{docentes.fecha_ingreso}}</td>
               <td>{{docentes.direccion}}</td>
-              <th>{{docentes.telefono}}</th>
-              <th>{{docentes.correo}}</th>
+              <td>{{docentes.telefono}}</td>
+              <td>{{docentes.correo}}</td>
 
 
               <td class="puntero" (click)="modificar(docentes.id)" style="color:rgb(30, 86, 198); "
