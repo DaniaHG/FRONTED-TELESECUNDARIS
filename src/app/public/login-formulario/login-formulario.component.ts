@@ -13,14 +13,16 @@ export class LoginFormularioComponent {
   usuario: Usuario = {
     id: 0,
     userName: '',
-    password: ''
+    pass: '',
+    roleId:''
+  
   };
 
   addressForm = this.fb.group({
 
     id: [""],
     userName: [null, Validators.required],
-    password: [null, Validators.required],
+    pass: [null, Validators.required],
 
   });
 
@@ -32,7 +34,7 @@ export class LoginFormularioComponent {
     this.securitySevice.login(this.usuario).subscribe(
       (res) =>{
         localStorage.setItem('token', res.token);
-        this.router.navigate(['personas']);
+        this.router.navigate(['/mostrarDocentes']);
       }
     )
   }

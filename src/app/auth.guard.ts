@@ -12,11 +12,13 @@ export class AuthGuard implements CanActivate {
   constructor(private securityService:SecurityService, private router:Router){}
 
     canActivate(): boolean{
-      if(this.securityService.logedIn()){
-        return true;
+      if(!this.securityService.logedIn()){
+        console.log('token no es valido o ya expiro')
+        this.router.navigate(['/login']);
+        return false;
       }
-    this.router.navigate(['/login']);
-    return false;
+  //  this.router.navigate(['/login']);
+    return true;
   }
 
 

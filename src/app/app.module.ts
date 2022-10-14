@@ -37,7 +37,7 @@ import { LisalumnoComponent } from './alumnos/lisalumno/lisalumno.component';
 import { AgregarMateriaDocenteComponent } from './materia_docente/agregarMateriaDocente/agregar-materia-docente/agregar-materia-docente.component';
 import { TablaMateriaDocenteComponent } from './materia_docente/tablaMateriaDocente/tabla-materia-docente/tabla-materia-docente.component';
 
-
+import {JwtHelperService, JWT_OPTIONS} from '@auth0/angular-jwt'
 
 @NgModule({
   declarations: [
@@ -82,7 +82,9 @@ import { TablaMateriaDocenteComponent } from './materia_docente/tablaMateriaDoce
       provide: HTTP_INTERCEPTORS,
       useClass: InterceptorService,
       multi:true
-    }
+    },
+    {provide: JWT_OPTIONS, useValue: JWT_OPTIONS},
+    JwtHelperService
   ],
   bootstrap: [AppComponent]
 })
