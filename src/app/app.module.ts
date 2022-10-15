@@ -36,6 +36,8 @@ import { AlumnosComponent } from './alumnos/alumnos.component';
 import { LisalumnoComponent } from './alumnos/lisalumno/lisalumno.component';
 import { AgregarMateriaDocenteComponent } from './materia_docente/agregarMateriaDocente/agregar-materia-docente/agregar-materia-docente.component';
 import { TablaMateriaDocenteComponent } from './materia_docente/tablaMateriaDocente/tabla-materia-docente/tabla-materia-docente.component';
+import { AgregarEntregaTareasComponent } from './entrega_tareas/agregarEntregaTareas/agregar-entrega-tareas/agregar-entrega-tareas.component';
+import { TablaEntregaTareasComponent } from './entrega_tareas/tablaEntregaTareas/tabla-entrega-tareas/tabla-entrega-tareas.component';
 
 
 
@@ -53,7 +55,9 @@ import { TablaMateriaDocenteComponent } from './materia_docente/tablaMateriaDoce
     AlumnosComponent,
     LisalumnoComponent,
     AgregarMateriaDocenteComponent,
-    TablaMateriaDocenteComponent
+    TablaMateriaDocenteComponent,
+    AgregarEntregaTareasComponent,
+    TablaEntregaTareasComponent
   ],
   imports: [
     BrowserModule,

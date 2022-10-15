@@ -12,6 +12,8 @@ import { TablaPeriodosComponent } from './periodos/tablaPeriodos/tabla-periodos/
 import { AgregarPeriodosComponent } from './periodos/agregarPeriodos/agregar-periodos/agregar-periodos.component';
 import { LisalumnoComponent } from './alumnos/lisalumno/lisalumno.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
+import { TablaEntregaTareasComponent } from './entrega_tareas/tablaEntregaTareas/tabla-entrega-tareas/tabla-entrega-tareas.component';
+import { AgregarEntregaTareasComponent } from './entrega_tareas/agregarEntregaTareas/agregar-entrega-tareas/agregar-entrega-tareas.component';
 
 
 const routes: Routes = [
@@ -42,6 +44,12 @@ const routes: Routes = [
   {path:'mostrarMateriasDocente', component:TablaMateriaDocenteComponent},
   {path:'agregarMateriasDocente', component:AgregarMateriaDocenteComponent},
   {path:'modificarMateriasDocente/:id', component:AgregarMateriaDocenteComponent},
+
+  //EntregaTareas
+  {path:'mostrarEntregaTareas', component:TablaEntregaTareasComponent},
+  {path:'agregarEntregaTareas', component:AgregarEntregaTareasComponent},
+  {path:'modificarEntregaTareas/:id', component:AgregarEntregaTareasComponent},
+
 ];
 
 @NgModule({
