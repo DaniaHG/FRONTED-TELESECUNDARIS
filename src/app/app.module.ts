@@ -61,7 +61,7 @@ import { TablaReporteTareasComponent } from './reportes/reporte_tareas/tablaRepo
     AgregarMateriaDocenteComponent,
     TablaMateriaDocenteComponent,
     AgregarEntregaTareasComponent,
-    TablaEntregaTareasComponent
+    TablaEntregaTareasComponent,
     AgregarMateriaAlumnoComponent,
     TablaMateriaAlumnoComponent,
     AgregarUsuariosComponent,
