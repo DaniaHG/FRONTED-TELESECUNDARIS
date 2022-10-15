@@ -1,3 +1,8 @@
+import { TablaReporteTareasComponent } from './reportes/reporte_tareas/tablaReporteTareas/tabla-reporte-tareas/tabla-reporte-tareas.component';
+import { AgregarUsuariosComponent } from './usuarios/agregarUsuarios/agregar-usuarios/agregar-usuarios.component';
+import { TablaUsuariosComponent } from './usuarios/tablaUsuarios/tabla-usuarios/tabla-usuarios.component';
+import { AgregarMateriaAlumnoComponent } from './materia_alumno/agregarMateriaAlumno/agregar-materia-alumno/agregar-materia-alumno.component';
+import { TablaMateriaAlumnoComponent } from './materia_alumno/tablaMateriaAlumno/tabla-materia-alumno/tabla-materia-alumno.component';
 import { AgregarMateriaDocenteComponent } from './materia_docente/agregarMateriaDocente/agregar-materia-docente/agregar-materia-docente.component';
 import { TablaMateriaDocenteComponent } from './materia_docente/tablaMateriaDocente/tabla-materia-docente/tabla-materia-docente.component';
 import { AgregarMateriasComponent } from './materias/agregarMaterias/agregar-materias/agregar-materias.component';
@@ -49,6 +54,20 @@ const routes: Routes = [
   {path:'mostrarEntregaTareas', component:TablaEntregaTareasComponent},
   {path:'agregarEntregaTareas', component:AgregarEntregaTareasComponent},
   {path:'modificarEntregaTareas/:id', component:AgregarEntregaTareasComponent},
+
+  //materias alumnos
+  {path:'mostrarMateriasAlumno', component:TablaMateriaAlumnoComponent},
+  {path:'agregarMateriasAlumno', component:AgregarMateriaAlumnoComponent},
+  {path:'modificarMateriasAlumno/:id', component:AgregarMateriaAlumnoComponent},
+
+  //usuarios
+  {path:'mostrarUsuarios', component:TablaUsuariosComponent},
+  {path:'agregarUsuarios', component:AgregarUsuariosComponent},
+  {path:'modificarUsuarios/:id', component:AgregarUsuariosComponent},
+
+  //reporte tareas
+  {path:'mostrarReporteTareas', component:TablaReporteTareasComponent},
+
 
 ];
 
