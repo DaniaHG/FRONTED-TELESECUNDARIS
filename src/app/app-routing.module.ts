@@ -17,6 +17,8 @@ import { TablaPeriodosComponent } from './periodos/tablaPeriodos/tabla-periodos/
 import { AgregarPeriodosComponent } from './periodos/agregarPeriodos/agregar-periodos/agregar-periodos.component';
 import { LisalumnoComponent } from './alumnos/lisalumno/lisalumno.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
+import { TablaEntregaTareasComponent } from './entrega_tareas/tablaEntregaTareas/tabla-entrega-tareas/tabla-entrega-tareas.component';
+import { AgregarEntregaTareasComponent } from './entrega_tareas/agregarEntregaTareas/agregar-entrega-tareas/agregar-entrega-tareas.component';
 
 
 const routes: Routes = [
@@ -48,6 +50,11 @@ const routes: Routes = [
   {path:'agregarMateriasDocente', component:AgregarMateriaDocenteComponent},
   {path:'modificarMateriasDocente/:id', component:AgregarMateriaDocenteComponent},
 
+  //EntregaTareas
+  {path:'mostrarEntregaTareas', component:TablaEntregaTareasComponent},
+  {path:'agregarEntregaTareas', component:AgregarEntregaTareasComponent},
+  {path:'modificarEntregaTareas/:id', component:AgregarEntregaTareasComponent},
+
   //materias alumnos
   {path:'mostrarMateriasAlumno', component:TablaMateriaAlumnoComponent},
   {path:'agregarMateriasAlumno', component:AgregarMateriaAlumnoComponent},
@@ -60,6 +67,7 @@ const routes: Routes = [
 
   //reporte tareas
   {path:'mostrarReporteTareas', component:TablaReporteTareasComponent},
+
 
 ];
 

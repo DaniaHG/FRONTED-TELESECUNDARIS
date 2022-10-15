@@ -36,12 +36,13 @@ import { AlumnosComponent } from './alumnos/alumnos.component';
 import { LisalumnoComponent } from './alumnos/lisalumno/lisalumno.component';
 import { AgregarMateriaDocenteComponent } from './materia_docente/agregarMateriaDocente/agregar-materia-docente/agregar-materia-docente.component';
 import { TablaMateriaDocenteComponent } from './materia_docente/tablaMateriaDocente/tabla-materia-docente/tabla-materia-docente.component';
+import { AgregarEntregaTareasComponent } from './entrega_tareas/agregarEntregaTareas/agregar-entrega-tareas/agregar-entrega-tareas.component';
+import { TablaEntregaTareasComponent } from './entrega_tareas/tablaEntregaTareas/tabla-entrega-tareas/tabla-entrega-tareas.component';
 import { AgregarMateriaAlumnoComponent } from './materia_alumno/agregarMateriaAlumno/agregar-materia-alumno/agregar-materia-alumno.component';
 import { TablaMateriaAlumnoComponent } from './materia_alumno/tablaMateriaAlumno/tabla-materia-alumno/tabla-materia-alumno.component';
 import { AgregarUsuariosComponent } from './usuarios/agregarUsuarios/agregar-usuarios/agregar-usuarios.component';
 import { TablaUsuariosComponent } from './usuarios/tablaUsuarios/tabla-usuarios/tabla-usuarios.component';
 import { TablaReporteTareasComponent } from './reportes/reporte_tareas/tablaReporteTareas/tabla-reporte-tareas/tabla-reporte-tareas.component';
-
 
 
 @NgModule({
@@ -59,6 +60,8 @@ import { TablaReporteTareasComponent } from './reportes/reporte_tareas/tablaRepo
     LisalumnoComponent,
     AgregarMateriaDocenteComponent,
     TablaMateriaDocenteComponent,
+    AgregarEntregaTareasComponent,
+    TablaEntregaTareasComponent
     AgregarMateriaAlumnoComponent,
     TablaMateriaAlumnoComponent,
     AgregarUsuariosComponent,
