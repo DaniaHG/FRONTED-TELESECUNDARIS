@@ -12,29 +12,19 @@ import decode from 'jwt-decode';
 export class RoleGuard implements CanActivate {
 
 
-  constructor(private securityService:SecurityService, private router:Router){}
 
-// constructor(private router: Router, private securityService: securityService) {}
-  
+  canActivate() {
+     
+    let roleId= localStorage.getItem ("userType");
 
-  canActivate(route:ActivatedRouteSnapshot):boolean {
+    if (roleId == "admin"){
+        return true
 
-  
-   
-  const user = this.securityService.userValue;
-
-  if (user) {
-    if (route.data.roles && route.data.roles.indexOf(user.rol) === -1) {
-        this.router.navigate(['/'])
-        return false;
     }
-    return true;
+     alert("NO Autorizado Para la Vista")
+     return false;
+ }
 
 
-
-
-  }
-  return true;
-
-  }
+ 
 }

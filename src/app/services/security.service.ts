@@ -40,7 +40,8 @@ export class SecurityService {
 }
 
 export interface Usuario {
-  id:number;
+  value: any;
+
   userName:string;
   pass:string;
   roleId:string;

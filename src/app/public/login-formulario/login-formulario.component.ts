@@ -11,10 +11,11 @@ import { Usuario } from 'src/app/services/security.service';
 })
 export class LoginFormularioComponent {
   usuario: Usuario = {
-    id: 0,
+     value:'',
     userName: '',
     pass: '',
     roleId:''
+  
   
   };
 
@@ -27,6 +28,7 @@ export class LoginFormularioComponent {
   });
 
   hasUnitNumber = false;
+  formvalidate: any;
 
   constructor(private fb: FormBuilder, private securitySevice: SecurityService, private router: Router) {}
 
@@ -34,8 +36,13 @@ export class LoginFormularioComponent {
     this.securitySevice.login(this.usuario).subscribe(
       (res) =>{
         localStorage.setItem('token', res.token);
-        this.router.navigate(['/mostrarDocentes']);
+        this.router.navigate(['/mostrarAlumnos']);
+        this.addressForm.value.userName == "admin"? localStorage.setItem('userType','admin') : localStorage.setItem('userType', 'user')
+       
       }
+      
     )
+    
   }
+ 
 }
