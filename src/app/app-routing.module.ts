@@ -19,6 +19,8 @@ import { LisalumnoComponent } from './alumnos/lisalumno/lisalumno.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
 import { TablaEntregaTareasComponent } from './entrega_tareas/tablaEntregaTareas/tabla-entrega-tareas/tabla-entrega-tareas.component';
 import { AgregarEntregaTareasComponent } from './entrega_tareas/agregarEntregaTareas/agregar-entrega-tareas/agregar-entrega-tareas.component';
+import { TablaTareasComponent } from './tareas/tabalaTareas/tabla-tareas/tabla-tareas.component';
+import { AgregarTareasComponent } from './tareas/agregarTareas/agregar-tareas/agregar-tareas.component';
 
 
 const routes: Routes = [
@@ -67,6 +69,11 @@ const routes: Routes = [
 
   //reporte tareas
   {path:'mostrarReporteTareas', component:TablaReporteTareasComponent},
+
+  //tareas
+  {path:'mostrarTareas', component:TablaTareasComponent},
+  {path:'agregarTareas', component:AgregarTareasComponent},
+  {path:'modificarTareas/:id', component:AgregarTareasComponent},
 
 
 ];
