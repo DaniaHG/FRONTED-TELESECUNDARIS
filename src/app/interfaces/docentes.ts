@@ -7,4 +7,5 @@ export interface Docentes{
   direccion: string;
   telefono: string;
   correo: string;
+  status: string;
 }
