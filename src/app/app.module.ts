@@ -46,6 +46,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { LoginFormularioComponent } from './public/login-formulario/login-formulario.component';
 
+import { AgregarTareasComponent } from './tareas/agregarTareas/agregar-tareas/agregar-tareas.component';
+import { TablaTareasComponent } from './tareas/tabalaTareas/tabla-tareas/tabla-tareas.component';
+
 
 @NgModule({
   declarations: [
@@ -68,7 +71,9 @@ import { LoginFormularioComponent } from './public/login-formulario/login-formul
     TablaMateriaAlumnoComponent,
     AgregarUsuariosComponent,
     TablaUsuariosComponent,
-    TablaReporteTareasComponent
+    TablaReporteTareasComponent,
+    AgregarTareasComponent,
+    TablaTareasComponent
   ],
   imports: [
     BrowserModule,
