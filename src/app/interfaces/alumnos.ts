@@ -5,6 +5,6 @@ export interface Alumnos{
     fecha_ingreso: string;
     direccion: string;
     telefono: string;
-   
+    status: string;
+
   }
-  
