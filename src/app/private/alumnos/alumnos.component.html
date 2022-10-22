@@ -31,7 +31,7 @@
               <tr *ngFor="let alumnos of ListarAlumnos" class=" text-center">
                 <td>{{alumnos.id}}</td>
                 <td>{{alumnos.nombre}}</td>
-                <td>{{alumnos.fecha_nacimiento}}</td>
+                <td>{{alumnos.fecha_nacimiento | date: 'd MMM y'}}</td>
                 <td>{{alumnos.fecha_ingreso}}</td>
                 <td>{{alumnos.direccion}}</td>
                 <td>{{alumnos.telefono}}</td>

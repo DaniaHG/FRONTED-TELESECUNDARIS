@@ -9,6 +9,22 @@
           <div class="example-spacer"></div>
           <button mat-raised-button color="primary" (click)="agregar()" matTooltip="Agregar Unidad">Agregar</button>
         </mat-toolbar>
+        <form [formGroup]="form" (ngSubmit)="grabar_localstorage()">
+          <div class="container p-1 mb-4 ">
+            <div class="row">
+              <div class="col order-last" >
+                <mat-form-field appearance="fill">
+                  <mat-label >Ciclo</mat-label>
+                  <mat-select (selectionChange)="cicloCambio($event.value)"  formControlName='ciclo'>
+                    <mat-option *ngFor="let periodo of collection" [value]="periodo.ciclo">
+                      {{periodo.ciclo}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </form>
         <mat-card class="card">
           <table class="full-width-table" class="table">
             <thead>

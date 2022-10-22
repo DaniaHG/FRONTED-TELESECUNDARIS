@@ -19,6 +19,11 @@ export class PeriodosService {
     return this.http.get<Periodos[]>(this.URL+'/'+id);
   }
 
+  getCicloPeriodos(ciclo:string): Observable<Periodos[]>{
+    return this.http.get<Periodos[]>(this.URL+'/ciclo/'+ciclo);
+  }
+
+
   postPeriodos(periodos:Periodos)
   {
     return this.http.post(this.URL, periodos).subscribe(
