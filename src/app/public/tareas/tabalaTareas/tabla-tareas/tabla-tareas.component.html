@@ -17,13 +17,14 @@
                 <th scope="col">Fecha</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Descripcion</th>
-                <th scope="col">Materias id</th>
                 <th scope="col">Materia</th>
                 <th scope="col">Grado</th>
                 <th scope="col">Seccion</th>
-                <th scope="col">Periodos id</th>
                 <th scope="col">Periodo</th>
-  
+
+                <th scope="col">Editar</th>
+                <th scope="col">Eliminar</th>
+
               </tr>
             </thead>
             <tbody>
@@ -32,19 +33,17 @@
                 <td>{{tareas.fecha}}</td>
                 <td>{{tareas.nombre}}</td>
                 <td>{{tareas.descripcion}}</td>
-                <td>{{tareas.materias_id}}</td>
                 <td>{{tareas.materia}}</td>
                 <td>{{tareas.grado}}</td>
                 <td>{{tareas.seccion}}</td>
-                <td>{{tareas.periodos_id}}</td>
                 <td>{{tareas.periodo}}</td>
-  
-  
+
+
                 <td class="puntero" (click)="modificar(tareas.id)" style="color:rgb(30, 86, 198); "
                   matTooltip="Editar Tareas">
                   <mat-icon>edit</mat-icon>
                 </td>
-  
+
                 <td class="puntero" (click)="eliminar(tareas.id)" style="color :rgba(238, 20, 20, 0.952)"
                   matTooltip="Eliminar Tareas">
                   <mat-icon>delete</mat-icon>
@@ -56,4 +55,3 @@
       </div>
     </div>
   </div>
-  

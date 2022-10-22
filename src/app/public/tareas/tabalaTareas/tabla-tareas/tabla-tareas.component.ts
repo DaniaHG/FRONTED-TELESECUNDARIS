@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { TareasService } from './../../../services/tareas.service';
-import { Tareas } from './../../../interfaces/tareas';
+import { TareasService } from '../../../../services/tareas.service';
+import { Tareas } from '../../../../interfaces/tareas';
 
 
 @Component({
@@ -11,7 +11,7 @@ import { Tareas } from './../../../interfaces/tareas';
 })
 export class TablaTareasComponent implements OnInit {
 
-  
+
 
   ListarTareas!: Tareas[];
   constructor(private tareasService:TareasService, private router:Router) { }

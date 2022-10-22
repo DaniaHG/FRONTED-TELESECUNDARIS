@@ -22,8 +22,8 @@ import { LoginFormularioComponent } from './public/login-formulario/login-formul
 import { NgModule} from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { TablaTareasComponent } from './tareas/tabalaTareas/tabla-tareas/tabla-tareas.component';
-import { AgregarTareasComponent } from './tareas/agregarTareas/agregar-tareas/agregar-tareas.component';
+import { TablaTareasComponent } from './public/tareas/tabalaTareas/tabla-tareas/tabla-tareas.component';
+import { AgregarTareasComponent } from './public/tareas/agregarTareas/agregar-tareas/agregar-tareas.component';
 
 
 

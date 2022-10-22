@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Router, ActivatedRoute } from '@angular/router';
-import { TareasService } from './../../../services/tareas.service';
-import { Tareas } from './../../../interfaces/tareas';
+import { TareasService } from '../../../../services/tareas.service';
+import { Tareas } from '../../../../interfaces/tareas';
 import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
